@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Wkc-qIzdTRg8rqH6JzWPx"
+uri = "file://clarivo-advisory.tar.gz"
+type = "unspecified"
+title = "Clarivo Advisory — Source Code"

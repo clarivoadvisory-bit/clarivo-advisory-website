@@ -17,8 +17,8 @@ export default async function handler(req, res) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "Clarivo Website <onboarding@resend.dev>",
-        to: ["shiv@clarivoadvisory.com"],
+        from: "Clarivo Website <noreply@clarivoadvisory.com>",
+        to: ["shiv@clarivoadvisory.com", "clarivoadvisory@gmail.com"],
         subject: `New Contact: ${service || "General"} - ${name}`,
         html: `
           <h2>New Contact Form Submission</h2>

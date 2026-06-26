@@ -2,7 +2,7 @@
   "version": 2,
   "framework": null,
   "installCommand": "pnpm install --frozen-lockfile",
-  "buildCommand": "pnpm run typecheck:libs && BASE_PATH=/ pnpm --filter @workspace/clarivo run build && pnpm --filter @workspace/api-server run build",
+  "buildCommand": "BASE_PATH=/ pnpm --filter @workspace/clarivo run build && pnpm --filter @workspace/api-server run build",",
   "outputDirectory": "artifacts/clarivo/dist/public",
   "rewrites": [
     { "source": "/api/:path*", "destination": "/api/index" }

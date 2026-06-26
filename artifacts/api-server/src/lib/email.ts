@@ -1,4 +1,4 @@
-/ @ts-nocheck
+// @ts-nocheck
 import { Resend } from "resend";
 import { logger } from "./logger";
 

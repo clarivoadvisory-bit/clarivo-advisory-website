@@ -2,18 +2,6 @@
   "extends": "./tsconfig.base.json",
   "compileOnSave": false,
   "files": [],
-  "exclude": [
-    "artifacts/api-server"
-  ],
-  "references": [
-    {
-      "path": "./lib/db"
-    },
-    {
-      "path": "./lib/api-client-react"
-    },
-    {
-      "path": "./lib/api-zod"
-    }
-  ]
+  "exclude": ["node_modules", "artifacts/api-server", "lib"],
+  "references": []
 }

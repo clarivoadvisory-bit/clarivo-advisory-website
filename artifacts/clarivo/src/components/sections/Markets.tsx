@@ -67,6 +67,30 @@ export function Markets() {
       ]
     },
     {
+      id: "crypto",
+      name: "Crypto Market Automation",
+      cards: [
+        { symbol: "BTC", color: "bg-orange-500", title: "Bitcoin Automation", desc: "Systematic BTC trading strategies with trend-following signals, volatility-adjusted position sizing and automated execution across major crypto exchanges." },
+        { symbol: "ETH", color: "bg-indigo-500", title: "Ethereum Strategies", desc: "ETH options and spot automation, gas-aware execution logic, DeFi yield integration and multi-timeframe momentum systems." },
+        { symbol: "ARB", color: "bg-teal-500", title: "Crypto Arbitrage", desc: "Cross-exchange arbitrage detection, latency-optimised execution, spread monitoring and automated opportunity capture across centralised and decentralised venues." },
+        { symbol: "DeFi", color: "bg-purple-600", title: "DeFi Analytics", desc: "On-chain liquidity analysis, protocol yield tracking, smart contract interaction automation and DeFi portfolio monitoring dashboards." },
+        { symbol: "OCH", color: "bg-blue-500", title: "On-Chain Signals", desc: "Wallet flow analysis, exchange inflow/outflow monitoring, whale alert integration and on-chain data pipelines feeding automated trading decisions." },
+        { symbol: "CRM", color: "bg-red-500", title: "Crypto Risk Management", desc: "Drawdown controls, volatility kill switches, correlation-based position limits, funding rate monitoring and portfolio-level crypto risk dashboards." },
+      ]
+    },
+    {
+      id: "custom",
+      name: "Custom Strategy Automation",
+      cards: [
+        { symbol: "BA", color: "bg-violet-600", title: "Bespoke Algorithm Development", desc: "End-to-end custom algorithm design tailored to your market, timeframe and risk profile — from concept and signal research through to production-ready code." },
+        { symbol: "MA", color: "bg-blue-600", title: "Multi-Asset Automation", desc: "Unified automation frameworks spanning equities, forex, commodities and crypto — correlated position management, cross-asset hedging and consolidated reporting." },
+        { symbol: "SE", color: "bg-emerald-600", title: "Signal Engine Design", desc: "Custom signal generation pipelines combining technical, fundamental and alternative data sources with configurable filters, confidence scoring and alert delivery." },
+        { symbol: "BT", color: "bg-amber-600", title: "Backtesting & Optimisation", desc: "Rigorous historical testing with walk-forward validation, Monte Carlo simulation, parameter sensitivity analysis and overfitting controls for robust strategy development." },
+        { symbol: "LD", color: "bg-cyan-600", title: "Live Deployment & Monitoring", desc: "Broker-connected live deployment with real-time monitoring dashboards, automated error recovery, performance logging and continuous health checks." },
+        { symbol: "PA", color: "bg-rose-600", title: "Performance Analytics", desc: "Comprehensive strategy reporting covering returns, Sharpe ratio, max drawdown, win rate, expectancy and trade-level attribution for ongoing improvement." },
+      ]
+    },
+    {
       id: "brokers",
       name: "Brokers & Platforms",
       cards: [

@@ -53,6 +53,13 @@ export function Footer() {
         <div className="text-center text-xs text-gray-500 font-medium">
           © {new Date().getFullYear()} Clarivo Advisory. All rights reserved. <span className="mx-2">|</span> clarivoadvisory.com
         </div>
+
+        {/* Regulatory Disclaimer */}
+        <div className="mt-6 pt-6 border-t border-white/5 text-center">
+          <p className="text-xs text-gray-600 leading-relaxed max-w-4xl mx-auto">
+            Clarivo Advisory is a technology provider and does not act as an investment adviser, research analyst or portfolio manager. We provide automation tools; all trading decisions and transactions are the user's own responsibility and are subject to market risk.
+          </p>
+        </div>
       </div>
     </footer>
   );

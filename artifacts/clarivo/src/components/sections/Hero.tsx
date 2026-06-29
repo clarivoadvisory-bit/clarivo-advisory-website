@@ -19,7 +19,7 @@ export function Hero({ onBookCall }: HeroProps) {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-[100dvh] flex items-center pt-20 overflow-hidden bg-[#040E1E]">
+    <section id="home" className="relative min-h-[100dvh] flex items-center pt-36 overflow-hidden bg-[#040E1E]">
       {/* Background Effects */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-[20%] left-[10%] w-[40vw] h-[40vw] bg-gold/5 rounded-full blur-[120px] mix-blend-screen" />

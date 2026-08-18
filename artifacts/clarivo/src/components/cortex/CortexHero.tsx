@@ -49,7 +49,7 @@ export function CortexHero() {
           </p>
 
           <p className="text-gray-400 max-w-xl mb-10 text-lg">
-            Cortex Markets brings AI intelligence, trading, fund management and institutional capabilities into a connected B2B technology ecosystem.
+            Cortex Markets brings AI intelligence, trading, and institutional capabilities into a connected B2B ecosystem. <span className="text-white font-medium block mt-2">End-to-end strategic deployment and infrastructure integration by Clarivo Advisory.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -57,10 +57,12 @@ export function CortexHero() {
               Request a Private Cortex Demonstration
               <ChevronRight className="w-5 h-5" />
             </button>
-            <a href="https://cortexmarkets.com" target="_blank" rel="noopener noreferrer" className="border border-white/20 text-white px-8 py-4 rounded font-semibold text-lg hover:bg-white/5 transition-all text-center flex items-center justify-center gap-2">
-              Explore Cortex
-              <ArrowUpRight className="w-5 h-5" />
-            </a>
+            <button onClick={() => {
+              document.getElementById("cortex-architecture")?.scrollIntoView({ behavior: "smooth" });
+            }} className="border border-white/20 text-white px-8 py-4 rounded font-semibold text-lg hover:bg-white/5 transition-all text-center flex items-center justify-center gap-2">
+              Explore the Architecture
+              <ChevronRight className="w-5 h-5" />
+            </button>
           </div>
 
           <div className="pt-4 flex items-center gap-3 text-xs md:text-sm text-gray-500 font-mono uppercase tracking-widest flex-wrap">

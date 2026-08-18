@@ -13,11 +13,14 @@ const queryClient = new QueryClient({
   },
 });
 
+import CortexMarkets from "@/pages/CortexMarkets";
+
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/admin" component={Admin} />
+      <Route path="/cortex-markets" component={CortexMarkets} />
       <Route component={NotFound} />
     </Switch>
   );

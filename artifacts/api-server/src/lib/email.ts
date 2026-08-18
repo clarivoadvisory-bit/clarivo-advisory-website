@@ -22,6 +22,20 @@ interface LeadEmailData {
   projectType?: string | null;
   budget?: string | null;
   message: string;
+  jobTitle?: string | null;
+  country?: string | null;
+  companyType?: string | null;
+  currentSituation?: string | null;
+  currentInfrastructure?: string | null;
+  areasOfInterest?: string | null;
+  implementationTimeline?: string | null;
+  linkedinUrl?: string | null;
+  howDidYouHearAboutUs?: string | null;
+  utmSource?: string | null;
+  utmMedium?: string | null;
+  utmCampaign?: string | null;
+  utmContent?: string | null;
+  landingPage?: string | null;
 }
 
 export async function sendOwnerNotification(lead: LeadEmailData): Promise<void> {
@@ -69,9 +83,25 @@ export async function sendOwnerNotification(lead: LeadEmailData): Promise<void> 
                 <div class="value"><a href="mailto:${lead.email}" style="color: #F4B400;">${lead.email}</a></div>
               </div>
               ${lead.company ? `<div class="field"><div class="label">Company</div><div class="value">${lead.company}</div></div>` : ""}
+              ${lead.jobTitle ? `<div class="field"><div class="label">Job Title</div><div class="value">${lead.jobTitle}</div></div>` : ""}
+              ${lead.country ? `<div class="field"><div class="label">Country</div><div class="value">${lead.country}</div></div>` : ""}
+              ${lead.companyType ? `<div class="field"><div class="label">Company Type</div><div class="value">${lead.companyType}</div></div>` : ""}
               ${lead.phone ? `<div class="field"><div class="label">Phone / WhatsApp</div><div class="value">${lead.phone}</div></div>` : ""}
+              ${lead.currentSituation ? `<div class="field"><div class="label">Current Situation</div><div class="value">${lead.currentSituation}</div></div>` : ""}
+              ${lead.currentInfrastructure ? `<div class="field"><div class="label">Current Infrastructure</div><div class="value">${lead.currentInfrastructure}</div></div>` : ""}
+              ${lead.areasOfInterest ? `<div class="field"><div class="label">Areas of Interest</div><div class="value">${lead.areasOfInterest}</div></div>` : ""}
+              ${lead.implementationTimeline ? `<div class="field"><div class="label">Implementation Timeline</div><div class="value">${lead.implementationTimeline}</div></div>` : ""}
               ${lead.projectType ? `<div class="field"><div class="label">Project Type</div><div class="value">${lead.projectType}</div></div>` : ""}
               ${lead.budget ? `<div class="field"><div class="label">Budget Range</div><div class="value">${lead.budget}</div></div>` : ""}
+              ${lead.linkedinUrl ? `<div class="field"><div class="label">LinkedIn URL</div><div class="value"><a href="${lead.linkedinUrl}" style="color: #F4B400;">${lead.linkedinUrl}</a></div></div>` : ""}
+              ${lead.howDidYouHearAboutUs ? `<div class="field"><div class="label">How did you hear about us?</div><div class="value">${lead.howDidYouHearAboutUs}</div></div>` : ""}
+              
+              <!-- UTM & Marketing Data -->
+              ${lead.landingPage ? `<div class="field" style="margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;"><div class="label">Landing Page</div><div class="value" style="font-size: 14px; color: #9CA3AF;">${lead.landingPage}</div></div>` : ""}
+              ${lead.utmSource ? `<div class="field"><div class="label">UTM Source</div><div class="value" style="font-size: 14px; color: #9CA3AF;">${lead.utmSource}</div></div>` : ""}
+              ${lead.utmMedium ? `<div class="field"><div class="label">UTM Medium</div><div class="value" style="font-size: 14px; color: #9CA3AF;">${lead.utmMedium}</div></div>` : ""}
+              ${lead.utmCampaign ? `<div class="field"><div class="label">UTM Campaign</div><div class="value" style="font-size: 14px; color: #9CA3AF;">${lead.utmCampaign}</div></div>` : ""}
+              ${lead.utmContent ? `<div class="field"><div class="label">UTM Content</div><div class="value" style="font-size: 14px; color: #9CA3AF;">${lead.utmContent}</div></div>` : ""}
               <div class="field">
                 <div class="label">Message</div>
                 <div class="message-box">${lead.message.replace(/\n/g, "<br>")}</div>

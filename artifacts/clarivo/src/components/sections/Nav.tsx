@@ -20,14 +20,15 @@ export function Nav({ onBookCall }: NavProps) {
   }, []);
 
   const navLinks = [
-    { name: "Home", href: "#home" },
-    { name: "About", href: "#founder" },
-    { name: "Services", href: "#services" },
-    { name: "Markets", href: "#markets" },
-    { name: "Results", href: "#casestudies" },
-    { name: "Resources", href: "#resources" },
-    { name: "Insights", href: "#insights" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/#home" },
+    { name: "About", href: "/#founder" },
+    { name: "Services", href: "/#services" },
+    { name: "Markets", href: "/#markets" },
+    { name: "Cortex Markets", href: "/cortex-markets" },
+    { name: "Results", href: "/#casestudies" },
+    { name: "Resources", href: "/#resources" },
+    { name: "Insights", href: "/#insights" },
+    { name: "Contact", href: "/#contact" },
   ];
 
   const tickerItems = [

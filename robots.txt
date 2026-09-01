@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://clarivoadvisory.com/sitemap.xml
+
+# Disallow admin or private paths (add as needed)
+# Disallow: /admin/
+# Disallow: /private/

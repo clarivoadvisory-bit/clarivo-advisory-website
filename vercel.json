@@ -1,41 +1,35 @@
 {
   "version": 2,
-  "framework": null,
-"installCommand": "pnpm install --frozen-lockfile --ignore-scripts",
-  "ignoreCommand": "exit 1",
- "buildCommand": "cd artifacts/clarivo && npx vite build --mode production",
-  "outputDirectory": "artifacts/clarivo/dist/public",
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/index" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ],
-  "functions": {
-    "api/index.ts": {
-      "memory": 256,
-      "maxDuration": 15
-    }
-  },
-  "headers": [
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "routes": [
     {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "X-Frame-Options", "value": "DENY" },
-        { "key": "X-XSS-Protection", "value": "1; mode=block" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
-      ]
+      "src": "/cortex-markets/(.*)",
+      "dest": "/cortex-markets/$1"
     },
     {
-      "source": "/assets/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
-      ]
+      "src": "/cortex-markets/?$",
+      "dest": "/cortex-markets/index.html"
     },
     {
-      "source": "/(.*\\.jpg|.*\\.png|.*\\.svg|.*\\.webp|.*\\.ico)",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=86400, stale-while-revalidate=604800" }
-      ]
+      "src": "/pharmaceutical-nutraceutical/(.*)",
+      "dest": "/pharmaceutical-nutraceutical/$1"
+    },
+    {
+      "src": "/pharmaceutical-nutraceutical/?$",
+      "dest": "/pharmaceutical-nutraceutical/index.html"
+    },
+    {
+      "src": "/web-development/(.*)",
+      "dest": "/web-development/$1"
+    },
+    {
+      "src": "/web-development/?$",
+      "dest": "/web-development/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }

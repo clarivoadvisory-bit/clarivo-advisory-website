@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enterprise Web Development &amp; Custom Digital Platforms | Clarivo Advisory</title>
+  <meta name="description" content="Custom web development, digital platform engineering, and enterprise software solutions. See live client case studies including ISMH Group, SISGOC, Trimantu, and Sunsya Global. Submit your concept and target budget for a custom scope.">
+  <meta name="keywords" content="enterprise web development, custom software engineering, ISMH group, SISGOC, Trimantu, Sunsya Global, custom CRM development, B2B digital platforms">
+  <meta property="og:title" content="Custom Web Development &amp; Client Platform Engineering | Clarivo Advisory">
+  <meta property="og:description" content="Transforming business concepts into high-converting, scalable enterprise digital platforms. Explore client case studies and submit your concept for a custom scope.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    :root {
+      --wd-primary: #0284c7;
+      --wd-gold: #b45309;
+      --wd-dark: #0f172a;
+      --wd-bg-alt: #f8fafc;
+      --wd-border: #e2e8f0;
+    }
+
+    .wd-hero {
+      padding: 140px 0 90px;
+      background: radial-gradient(circle at 85% 15%, rgba(2, 132, 199, 0.08) 0%, transparent 55%),
+                  radial-gradient(circle at 15% 85%, rgba(180, 83, 9, 0.08) 0%, transparent 55%),
+                  #ffffff;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .wd-hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .wd-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      border-radius: 50px;
+      background: rgba(2, 132, 199, 0.1);
+      border: 1px solid rgba(2, 132, 199, 0.3);
+      color: #0284c7;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    .wd-headline {
+      font-family: 'Cinzel', serif;
+      font-size: 2.85rem;
+      line-height: 1.15;
+      color: #0f172a;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    .wd-headline span { color: #b45309; }
+
+    .wd-subheadline {
+      font-size: 1.1rem;
+      color: #475569;
+      line-height: 1.65;
+      margin-bottom: 36px;
+    }
+
+    .wd-portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .wd-portfolio-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wd-portfolio-card:hover {
+      border-color: #cbd5e1;
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.1);
+    }
+
+    .wd-card-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+      background: #0f172a;
+    }
+
+    .wd-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .wd-portfolio-card:hover .wd-card-img {
+      transform: scale(1.04);
+    }
+
+    .wd-card-badge {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      padding: 4px 12px;
+      border-radius: 20px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      color: #ffffff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .wd-card-body {
+      padding: 28px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wd-card-body h3 {
+      font-size: 1.3rem;
+      color: #0f172a;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .wd-card-domain {
+      font-size: 0.82rem;
+      color: #0284c7;
+      font-weight: 700;
+      margin-bottom: 14px;
+    }
+
+    .wd-card-body p {
+      font-size: 0.9rem;
+      color: #475569;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .wd-tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+
+    .wd-tech-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 3px 10px;
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: #334155;
+      border: 1px solid #e2e8f0;
+    }
+
+    .wd-card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #b45309;
+      text-decoration: none;
+    }
+
+    .wd-card-btn:hover { color: #92400e; }
+
+    .wd-calculator-card {
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    }
+
+    .wd-form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .wd-form-group {
+      margin-bottom: 20px;
+    }
+
+    .wd-form-group.full-width {
+      grid-column: 1 / -1;
+    }
+
+    .wd-form-group label {
+      display: block;
+      color: #0f172a;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .wd-form-group input, .wd-form-group select, .wd-form-group textarea {
+      width: 100%;
+      padding: 13px 16px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 10px;
+      color: #0f172a;
+      font-size: 0.9rem;
+      font-family: inherit;
+    }
+
+    .wd-form-group input:focus, .wd-form-group select:focus, .wd-form-group textarea:focus {
+      outline: none;
+      border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+    }
+
+    .wd-checkbox-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .wd-checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: #334155;
+      cursor: pointer;
+      background: #f8fafc;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      transition: all 0.2s;
+    }
+
+    .wd-checkbox-label:hover {
+      border-color: #0284c7;
+      background: #f0f9ff;
+    }
+
+    @media (max-width: 992px) {
+      .wd-hero-grid { grid-template-columns: 1fr; }
+      .wd-portfolio-grid { grid-template-columns: 1fr; }
+      .wd-form-grid { grid-template-columns: 1fr; }
+      .wd-checkbox-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL HEADER -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../" class="nav-logo" aria-label="Clarivo Advisory">
+        <span class="logo-mark">C</span>
+        <span class="logo-text">Clarivo <span>Advisory</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../#home" class="nav-link">Home</a></li>
+        <li><a href="../#founder" class="nav-link">About</a></li>
+        <li><a href="../#services" class="nav-link">Services</a></li>
+        <li><a href="./" class="nav-link nav-link-web active">Web Platforms</a></li>
+        <li><a href="../pharmaceutical-nutraceutical/" class="nav-link nav-link-pharma">Pharma Advisory</a></li>
+        <li><a href="../cortex-markets/" class="nav-link nav-link-cortex">Cortex Markets</a></li>
+        <li><a href="../#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#concept-builder" class="btn btn-gold nav-cta">Share Concept &amp; Budget</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="wd-hero">
+    <div class="container">
+      <div class="wd-hero-grid">
+        <div>
+          <div class="wd-eyebrow">🌐 Custom Web Development &amp; Platform Engineering</div>
+          <h1 class="wd-headline">Enterprise Web Development &amp; <span>Custom Client Platforms</span></h1>
+          <p class="wd-subheadline">We engineer custom web applications, digital portals, trade engines, and enterprise software platforms tailored to your business model. Explore live client projects delivered for international leaders or submit your concept and budget reference for a custom prototype estimate.</p>
+          <div style="display:flex;gap:16px;flex-wrap:wrap;">
+            <a href="#concept-builder" class="btn btn-gold btn-lg">Submit Concept &amp; Target Budget</a>
+            <a href="#showcase" class="btn btn-ghost btn-lg">Explore Client Showcase</a>
+          </div>
+        </div>
+        <div>
+          <div style="position:relative;border-radius:20px;overflow:hidden;border:1px solid #e2e8f0;box-shadow:0 20px 50px rgba(15,23,42,0.1);background:#ffffff;">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop" alt="Custom Digital Platforms & Enterprise Web Development" style="width:100%;height:380px;object-fit:cover;display:block;" />
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:24px;background:linear-gradient(to top, rgba(15, 23, 42, 0.92), transparent);display:flex;justify-content:space-between;align-items:flex-end;">
+              <div>
+                <div style="color:#f59e0b;font-weight:700;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;">Clarivo Web Advisory</div>
+                <div style="color:#fff;font-weight:700;font-size:1.1rem;">Custom Client Platform Engineering</div>
+              </div>
+              <span style="background:rgba(2, 132, 199, 0.2);color:#38bdf8;border:1px solid rgba(2, 132, 199, 0.4);padding:4px 12px;border-radius:20px;font-size:0.75rem;font-weight:700;">Live Client Deployed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE CLIENT SHOWCASE SECTION -->
+  <section id="showcase" style="padding:90px 0;background:#ffffff;border-bottom:1px solid #e2e8f0;">
+    <div class="container">
+      <div style="text-align:center;max-width:820px;margin:0 auto 50px;">
+        <div class="wd-eyebrow">Proven Client Delivery</div>
+        <h2 style="font-family:'Cinzel',serif;font-size:2.25rem;color:#0f172a;margin-bottom:16px;">Live Client Web Development &amp; Platform Case Studies</h2>
+        <p style="color:#475569;font-size:1rem;line-height:1.6;">Explore a selection of custom digital platforms designed, built, and deployed for our corporate and international trade clients.</p>
+      </div>
+
+      <div class="wd-portfolio-grid">
+        <!-- CLIENT 1: ISMH GROUP -->
+        <div class="wd-portfolio-card">
+          <div class="wd-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=800&auto=format&fit=crop" alt="ISMH Group Medical Resort & Healthcare Ecosystem" class="wd-card-img" />
+            <span class="wd-card-badge">Healthcare &amp; Medical Resort</span>
+          </div>
+          <div class="wd-card-body">
+            <h3>ISMH Group</h3>
+            <a href="https://www.ismhgroup.com/" target="_blank" rel="noopener" class="wd-card-domain">🔗 www.ismhgroup.com ↗</a>
+            <p>A comprehensive, global-standard healthcare ecosystem and medical resort portal built for Cambodia. Features international patient intake, hospital division showcase, pharmacy management, and NAD+ longevity appointment workflows.</p>
+            <div class="wd-tech-tags">
+              <span class="wd-tech-tag">Hospital Portal</span>
+              <span class="wd-tech-tag">Pharmacy Suite</span>
+              <span class="wd-tech-tag">NAD+ Clinic Booking</span>
+              <span class="wd-tech-tag">International Care</span>
+            </div>
+            <a href="https://www.ismhgroup.com/" target="_blank" rel="noopener" class="wd-card-btn">Visit Live ISMH Group Platform <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- CLIENT 2: SISGOC -->
+        <div class="wd-portfolio-card">
+          <div class="wd-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="SISGOC Global Logistics & Shipping Trading OS" class="wd-card-img" />
+            <span class="wd-card-badge">Logistics &amp; Shipping OS</span>
+          </div>
+          <div class="wd-card-body">
+            <h3>SISGOC</h3>
+            <a href="https://www.sisgoc.com/" target="_blank" rel="noopener" class="wd-card-domain">🔗 www.sisgoc.com ↗</a>
+            <p>Global logistics, freight forwarding, and international supply chain platform. Features container shipping tracking, RFQ quotation engines, multi-modal transport management, and trade partner portals.</p>
+            <div class="wd-tech-tags">
+              <span class="wd-tech-tag">Freight RFQ Engine</span>
+              <span class="wd-tech-tag">Container Tracking</span>
+              <span class="wd-tech-tag">Supply Chain OS</span>
+              <span class="wd-tech-tag">Global Trade</span>
+            </div>
+            <a href="https://www.sisgoc.com/" target="_blank" rel="noopener" class="wd-card-btn">Visit Live SISGOC Platform <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- CLIENT 3: TRIMANTU -->
+        <div class="wd-portfolio-card">
+          <div class="wd-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=800&auto=format&fit=crop" alt="Trimantu Industrial & Corporate Solutions Portal" class="wd-card-img" />
+            <span class="wd-card-badge">Industrial &amp; Corporate</span>
+          </div>
+          <div class="wd-card-body">
+            <h3>Trimantu</h3>
+            <a href="https://www.trimantu.com/" target="_blank" rel="noopener" class="wd-card-domain">🔗 www.trimantu.com ↗</a>
+            <p>Corporate services and industrial solutions web portal. Features specialized B2B product catalogs, technical documentation downloads, automated inquiry routing, and enterprise client onboarding.</p>
+            <div class="wd-tech-tags">
+              <span class="wd-tech-tag">Industrial Catalog</span>
+              <span class="wd-tech-tag">Doc Portal</span>
+              <span class="wd-tech-tag">B2B Lead Routing</span>
+              <span class="wd-tech-tag">Corporate UX</span>
+            </div>
+            <a href="https://www.trimantu.com/" target="_blank" rel="noopener" class="wd-card-btn">Visit Live Trimantu Platform <span>→</span></a>
+          </div>
+        </div>
+
+        <!-- CLIENT 4: SUNSYA GLOBAL -->
+        <div class="wd-portfolio-card">
+          <div class="wd-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop" alt="Sunsya Global Cross-Border Export & Trading Hub" class="wd-card-img" />
+            <span class="wd-card-badge">Cross-Border Export Hub</span>
+          </div>
+          <div class="wd-card-body">
+            <h3>Sunsya Global</h3>
+            <a href="https://www.sunsiyaglobal.com/" target="_blank" rel="noopener" class="wd-card-domain">🔗 www.sunsiyaglobal.com ↗</a>
+            <p>International merchant export and commodity trading hub. Engineered for multi-region buyer discovery, export compliance verification, product specification showcases, and automated RFQ pipeline management.</p>
+            <div class="wd-tech-tags">
+              <span class="wd-tech-tag">Export Commodity Hub</span>
+              <span class="wd-tech-tag">Verified Buyer CRM</span>
+              <span class="wd-tech-tag">Multi-Region UX</span>
+              <span class="wd-tech-tag">Compliance Portal</span>
+            </div>
+            <a href="https://www.sunsiyaglobal.com/" target="_blank" rel="noopener" class="wd-card-btn">Visit Live Sunsya Global Platform <span>→</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE CONCEPT & BUDGET SUBMISSION TOOL SECTION -->
+  <section id="concept-builder" style="padding:90px 0;background:#f8fafc;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:0.85fr 1.15fr;gap:48px;align-items:flex-start;">
+        <div>
+          <div class="wd-eyebrow">Custom Scope &amp; Budget Builder</div>
+          <h2 style="font-family:'Cinzel',serif;font-size:2.25rem;color:#0f172a;margin-bottom:20px;">Have a Business Concept or Reference Website?</h2>
+          <p style="color:#475569;line-height:1.65;margin-bottom:24px;">Whether you want a web platform similar to <strong>ISMH Group</strong>, <strong>SISGOC</strong>, <strong>Trimantu</strong>, or <strong>Sunsya Global</strong> — or a completely bespoke custom application — share your reference links and target budget. Our team will prepare a custom development scope and prototype estimate.</p>
+          
+          <div style="background:#ffffff;padding:24px;border-radius:16px;border:1px solid #e2e8f0;margin-bottom:20px;box-shadow:0 10px 25px rgba(15,23,42,0.04);">
+            <div style="color:#0284c7;font-weight:700;font-size:0.88rem;margin-bottom:6px;">🛠️ CUSTOM DEVELOPMENT GUARANTEE</div>
+            <div style="color:#0f172a;font-weight:700;font-size:1rem;margin-bottom:6px;">100% Tailored Codebase &amp; Full IP Ownership</div>
+            <p style="color:#475569;font-size:0.85rem;line-height:1.5;">You own 100% of your source code, database architecture, and design assets. Built with modern, clean tech stacks without vendor lock-in.</p>
+          </div>
+
+          <div style="background:#ffffff;padding:24px;border-radius:16px;border:1px solid #e2e8f0;box-shadow:0 10px 25px rgba(15,23,42,0.04);">
+            <div style="color:#b45309;font-weight:700;font-size:0.88rem;margin-bottom:6px;">⏱️ FAST-TRACK DELIVERABLES</div>
+            <p style="color:#475569;font-size:0.85rem;line-height:1.5;">Interactive prototype wireframes delivered within 5 business days. Full turnkey deployment in 4–8 weeks.</p>
+          </div>
+        </div>
+
+        <div>
+          <div class="wd-calculator-card">
+            <h3 style="color:#0f172a;font-family:'Cinzel',serif;font-size:1.5rem;margin-bottom:20px;">Submit Concept &amp; Request Custom Quote</h3>
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your concept submission and reference links have been received. Shiv Kumar & the Clarivo Web Engineering team will analyze your requirements and send a custom development scope & prototype estimate within 24 hours.');">
+              <div class="wd-form-grid">
+                <div class="wd-form-group">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="e.g. Founder / Business Owner" required>
+                </div>
+                <div class="wd-form-group">
+                  <label>Work Email Address</label>
+                  <input type="email" placeholder="name@company.com" required>
+                </div>
+                <div class="wd-form-group">
+                  <label>Business Industry / Domain</label>
+                  <select required>
+                    <option value="">Select Industry Domain</option>
+                    <option value="healthcare">Healthcare / Hospital / Pharmacy Portal</option>
+                    <option value="logistics">Logistics / Supply Chain / Shipping OS</option>
+                    <option value="trade">B2B Merchant Export &amp; Commodity Hub</option>
+                    <option value="fintech">Fintech / Financial Markets / Trading</option>
+                    <option value="industrial">Industrial &amp; Corporate B2B Services</option>
+                    <option value="ecommerce">E-Commerce &amp; Custom Marketplace</option>
+                    <option value="other">Other Bespoke Digital Concept</option>
+                  </select>
+                </div>
+                <div class="wd-form-group">
+                  <label>Target Budget Scope Tier</label>
+                  <select required>
+                    <option value="">Select Budget Tier</option>
+                    <option value="starter">Starter Growth Portal ($1,500 – $3,000)</option>
+                    <option value="pro">Professional Business Platform ($3,000 – $7,000)</option>
+                    <option value="enterprise">Enterprise Custom Stack &amp; AI ($7,000+)</option>
+                  </select>
+                </div>
+                <div class="wd-form-group full-width">
+                  <label>Reference Website Links (Inspiration / Competitors)</label>
+                  <input type="text" placeholder="e.g. https://www.ismhgroup.com/ or https://www.sisgoc.com/ or your reference link">
+                </div>
+                <div class="wd-form-group full-width">
+                  <label>Select Key Required Features</label>
+                  <div class="wd-checkbox-grid">
+                    <label class="wd-checkbox-label"><input type="checkbox" checked> Custom UI/UX Design</label>
+                    <label class="wd-checkbox-label"><input type="checkbox" checked> Lead Capture &amp; CRM</label>
+                    <label class="wd-checkbox-label"><input type="checkbox"> AI Chat / Assistant</label>
+                    <label class="wd-checkbox-label"><input type="checkbox"> Multi-Language Support</label>
+                    <label class="wd-checkbox-label"><input type="checkbox"> Payment Gateway / Escrow</label>
+                    <label class="wd-checkbox-label"><input type="checkbox"> Client Login Portal</label>
+                  </div>
+                </div>
+                <div class="wd-form-group full-width">
+                  <label>Concept Description &amp; Custom Features</label>
+                  <textarea rows="3" placeholder="Tell us about your concept, target audience, specific features, or custom requirements..."></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-gold btn-lg" style="width:100%;margin-top:10px;">Submit Concept &amp; Get Custom Prototype Estimate</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../" class="nav-logo footer-logo">
+            <span class="logo-mark">C</span>
+            <span class="logo-text">Clarivo <span>Advisory</span></span>
+          </a>
+          <p class="footer-tagline">Strategic AI, Custom Web Development, Global Lead Generation &amp; Trade Advisory led by Shiv Kumar.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>Practice Areas</h4>
+          <ul>
+            <li><a href="./">Web Platforms Showcase</a></li>
+            <li><a href="../pharmaceutical-nutraceutical/">Pharma Advisory</a></li>
+            <li><a href="../cortex-markets/">Cortex Markets B2B</a></li>
+            <li><a href="../#services">Enterprise AI Automation</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>Contact Advisory</h4>
+          <p style="color:#94a3b8;font-size:0.84rem;line-height:1.7;">Email: shiv@clarivoadvisory.com<br>Web: www.clarivoadvisory.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Clarivo Advisory. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

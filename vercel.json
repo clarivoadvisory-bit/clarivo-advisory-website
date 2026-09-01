@@ -1,35 +1,30 @@
 {
-  "version": 2,
   "cleanUrls": true,
   "trailingSlash": true,
-  "routes": [
+  "rewrites": [
     {
-      "src": "/cortex-markets/(.*)",
-      "dest": "/cortex-markets/$1"
+      "source": "/cortex-markets",
+      "destination": "/cortex-markets/index.html"
     },
     {
-      "src": "/cortex-markets/?$",
-      "dest": "/cortex-markets/index.html"
+      "source": "/cortex-markets/",
+      "destination": "/cortex-markets/index.html"
     },
     {
-      "src": "/pharmaceutical-nutraceutical/(.*)",
-      "dest": "/pharmaceutical-nutraceutical/$1"
+      "source": "/pharmaceutical-nutraceutical",
+      "destination": "/pharmaceutical-nutraceutical/index.html"
     },
     {
-      "src": "/pharmaceutical-nutraceutical/?$",
-      "dest": "/pharmaceutical-nutraceutical/index.html"
+      "source": "/pharmaceutical-nutraceutical/",
+      "destination": "/pharmaceutical-nutraceutical/index.html"
     },
     {
-      "src": "/web-development/(.*)",
-      "dest": "/web-development/$1"
+      "source": "/web-development",
+      "destination": "/web-development/index.html"
     },
     {
-      "src": "/web-development/?$",
-      "dest": "/web-development/index.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
+      "source": "/web-development/",
+      "destination": "/web-development/index.html"
     }
   ]
 }

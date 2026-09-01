@@ -1,0 +1,30 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    {
+      "source": "/cortex-markets",
+      "destination": "/cortex-markets/index.html"
+    },
+    {
+      "source": "/cortex-markets/",
+      "destination": "/cortex-markets/index.html"
+    },
+    {
+      "source": "/pharmaceutical-nutraceutical",
+      "destination": "/pharmaceutical-nutraceutical/index.html"
+    },
+    {
+      "source": "/pharmaceutical-nutraceutical/",
+      "destination": "/pharmaceutical-nutraceutical/index.html"
+    },
+    {
+      "source": "/web-development",
+      "destination": "/web-development/index.html"
+    },
+    {
+      "source": "/web-development/",
+      "destination": "/web-development/index.html"
+    }
+  ]
+}
